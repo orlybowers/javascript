@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="anumberdice.html">Number Dice</a>
+                <a href="cportgrad.html">Portfolio Grade</a>
+                <a href="davgcalc.html">Average Calculator</a>
+                <a href="ecompint.html">Compound Interest</a>
+                <a href="ftextdice.html">Text Dice</a>
+            </nav>
+        </header>
+        <br>
+        <input type="number" id="num1" value="2">
+        <input type="number" id="num2" value="2">
+        <button onclick="add()">Add</button>
+        <script>
+            function add() {
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                var sum = parseInt(num1) + parseInt(num2);
+                alert("The sum is " + sum);
+            }
+        </script>
+    </body>
+</html>
